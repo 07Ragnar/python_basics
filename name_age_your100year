@@ -1,0 +1,12 @@
+'''
+    Create a program that asks the user to enter their name and their age. 
+    Print out a message addressed to 
+    them that tells them the year that they will turn 100 years old.
+'''
+name = input("Enter you name here: ")
+print("Hello " + name)
+year = int(input("Current year: "))
+age = int(input("Enter your age: "))
+years_to_100 = 100 - age
+year_when_you_turn100 = years_to_100 + year
+print("It will be " + str(year_when_you_turn100) + " " + "when you turn 100")
