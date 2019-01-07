@@ -1,0 +1,13 @@
+'''
+Take a list, say for example this one:
+
+  a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+and write a program that prints out all the elements of the list that are less than 5.
+'''
+
+five_filter = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 3]
+filtered_lst = []
+for in_the_list in five_filter:
+    if in_the_list <= 5:
+        filtered_lst.append(in_the_list)
+print(filtered_lst)        
