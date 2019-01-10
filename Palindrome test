@@ -1,0 +1,8 @@
+palin_test = input("Enter word to test: ")
+print(palin_test)
+bizarro = palin_test[::-1]
+print(bizarro)
+if palin_test == bizarro:
+    print("Your word is a palindrome.")
+else:
+    print("Your word is not a palindrome.")
