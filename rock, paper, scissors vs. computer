@@ -1,0 +1,49 @@
+import random
+com_hands = []
+player_hands = []
+number_of_games = 5
+
+hand_choices = {
+    1: "rock",
+    2: "paper",
+    3: "scissors",
+}
+
+print("Best of 5. Are you ready to play rock, paper, scissors?")
+
+for game in range(1, (number_of_games + 1)):
+    match = input("Game # "+ str(game) +  ". Choose which one: (rock, paper, or scissors)")
+    if match == "rock":
+        player_hands.append(1)
+    elif match == "paper":
+        player_hands.append(2)
+    elif match == "scissors":
+        player_hands.append(3)
+    else:
+        print("INPUT ERROR. Please input these choices: rock, paper or, scissors")
+        break
+print(player_hands)
+
+for x in range(5):
+     com_hands.append(random.randint(1,3))
+print(com_hands)
+
+for game in range(0, number_of_games):
+    if com_hands[game] == player_hands[game]:
+        print("Game " + str(game + 1) + " is a tie.")
+    elif player_hands[game] == 1:
+        if com_hands == 2:
+            print("Game " + str(game + 1) + " Player loses to paper.")
+        else:
+            print("Game " + str(game + 1) + " Player wins with rock.")
+    elif player_hands[game] == 2:
+        if com_hands == 1:
+            print("Game " + str(game  + 1) + " Player wins with paper.")
+        else:
+            print("Game " + str(game  + 1) + " Player loses to scissors.")
+    else:
+        if com_hands == 1:
+            print("Game " + str(game  + 1) + " Player loses to rock.")
+        else:
+            print("Game " + str(game  + 1) + " Player wins with scissors.")
+
