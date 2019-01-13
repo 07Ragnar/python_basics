@@ -1,0 +1,26 @@
+import random
+
+print("Are you ready to play, guess the number?")
+players_guess = input("What number am I thinking of? ")
+
+coms_number = str(random.randint(1, 9))
+tries = 5
+
+for try_1 in range(1,tries):
+    if try_1 < tries:
+        
+        if players_guess == coms_number:
+            print("You are correct. The number I was thinking of was " + coms_number)
+            break
+        elif players_guess > coms_number:
+            print("Your guess is greater than my number. ")
+            print("You have " + str(tries - try_1) + " more tries.")
+            players_guess = input("Please try again. ")
+
+        elif players_guess < coms_number:
+            print("A little higher. Your guess is lower than my number.")
+            print("You have " + str(tries - try_1) + " more tries.")
+            players_guess = input("Please try again. ")
+            
+    else:
+        print("You ran out of tries. My number is " + coms_number_to_guess + ".")
