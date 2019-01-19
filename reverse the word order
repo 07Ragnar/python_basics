@@ -1,0 +1,21 @@
+starting_str = "The quick brown fox jumps over the lazy dog."
+def split_up(raw):
+    x = raw
+    parts = x.split(" ")
+    new_loc = []
+    return parts
+
+def rev_order(x = (split_up(starting_str))):
+    start_here = x
+    rev_combo = []
+#    print(len(start_here))
+    vv = len(start_here)
+    for things in range(vv):
+        rev_combo.append(start_here[(vv - 1) - things]) 
+    return rev_combo
+        
+        
+#    print(len(parts))
+    
+print(split_up(starting_str))
+print(rev_order())
