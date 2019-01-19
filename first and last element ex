@@ -1,0 +1,18 @@
+#get the 1st and last list element
+
+import random
+
+short_a = random.sample(range(100), 11)
+print(short_a)
+
+def list_first_last(x):
+    bigger_list = x
+#    print(bigger_list)
+    to_go_here = []
+    to_go_here.append(bigger_list[0])
+    to_go_here.append(bigger_list[-1]) 
+    return(to_go_here)
+#    print(to_go_here)
+print(list_first_last(short_a))
+
+
