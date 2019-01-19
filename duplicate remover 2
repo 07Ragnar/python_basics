@@ -1,0 +1,21 @@
+#list overlap exercise
+
+import random
+
+def dupes_often(a):
+    place_r = a
+    tempo = []
+    for gen_rand in range(place_r):
+        add_x = random.sample(range(7), 1)    
+
+        tempo.append(add_x[0])
+    return tempo
+
+def ch_to_set():
+    raw_list = dupes_often(15)
+    unique_1s = set(raw_list)
+    print(raw_list)
+    return(unique_1s)
+print(ch_to_set())
+
+# print(dupes_often(a = 15))
