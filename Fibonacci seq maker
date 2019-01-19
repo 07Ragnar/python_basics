@@ -1,0 +1,42 @@
+#fibbonacci maker / got broken... redo and complete
+
+how_many = int(input ("How many fibbonaccis do you need? "))
+
+# + 1 sequence maker
+def plus_1(x):
+    y = x
+    sequence = []
+    for elm in range(y + 1):
+        sequence.append(elm)
+    return sequence
+guide = plus_1(how_many)
+#print("guide:")
+#print(guide)
+
+
+
+def fibber(start = how_many):
+    no_of_fib = start
+    guide_ls = (plus_1(no_of_fib))
+    
+    fib_list = []
+    
+#    return guide_ls
+    print(guide_ls)
+    length_gd = len(guide_ls)
+    print(length_gd)
+    for step_fb in range(length_gd - 1):
+        if step_fb == 0:
+            fib_list.append(1)
+        elif step_fb == 1:
+            fib_list.append(1)
+        elif step_fb > 1:
+            sum_fib = fib_list[step_fb - 2] + fib_list[step_fb - 1]
+            fib_list.append(sum_fib)
+        
+    print(fib_list)
+        
+
+
+
+fibber()
