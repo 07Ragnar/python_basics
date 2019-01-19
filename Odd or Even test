@@ -1,0 +1,11 @@
+'''
+    Test a number if odd or even
+'''
+def oddeven_test():
+    num_input = int(input("Enter the number to test for eveness. "))
+    if num_input % 2 == 0:
+        print("The number is even.")
+    else:
+        print("The number is odd.") 
+
+oddeven_test()        
