@@ -1,0 +1,16 @@
+#using def to check for prime numbers
+def is_prime(num):
+    
+    '''
+    The Naive methode of determining if an integer is a prime number
+    
+    '''
+    for n in range(2,num):
+        if num % n == 0:
+            print 'Not prime.'
+            break
+        else: #if never modulo 0 then it is prime
+            print 'Prime.'
+            
+is_prime(16)
+
